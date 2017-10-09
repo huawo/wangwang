@@ -16,6 +16,16 @@ header .navbar{
 	box-shadow: .1rem -1rem .5rem 1rem #000;
 	position: relative;
 }
+.navbar h1{
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	letter-spacing: .1rem;
+}
+.navbar h1 em{
+	font-style: normal;
+	color: #2D6F89
+}
 
 header .banner{
 	margin-bottom: 1rem;
@@ -89,7 +99,7 @@ section .tabs li{
   
 }
 #otabs li:nth-child(4),#otabs li:nth-child(5),#otabs li:nth-child(6){
-	background:#F8F8F8;
+	background:#F6F6F6;
 
 }
 #otabs li:nth-child(7),#otabs li:nth-child(8),#otabs li:nth-child(9){
@@ -127,13 +137,13 @@ section .tabs li{
 }
 .logobg{
 	width: 100%;
-	margin-top: -15rem;
-
+	position: relative;
+	margin-top: -15rem;	
 }
 .logobg img{
 	width: 70%;
 	position: absolute;
-	top: 55%;
+	top:0;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0.3;
