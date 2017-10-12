@@ -118,7 +118,11 @@ section .tabs li{
 .logobg img{
 	width: 60%;
 	position: absolute;
+<<<<<<< HEAD
 	top:-1.8rem;
+=======
+	top:-1rem;
+>>>>>>> 0aec9338a0296924d7fc35a6152867c62644626d
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0.3;	
