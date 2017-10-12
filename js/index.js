@@ -1,8 +1,5 @@
 $(function(){
-<<<<<<< HEAD
 	 
-=======
->>>>>>> 0aec9338a0296924d7fc35a6152867c62644626d
 		//$(".tabs").tabs( );
 		// $(".ulbtn li").on("click",function(){
 		// 	$(".ulbtn li").css({
