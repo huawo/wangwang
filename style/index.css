@@ -1,10 +1,11 @@
 html{
 	font-size: 62.5%;
+	height: auto;
+ 
 }
 body,h1{
 	margin: 0;
 	padding: 0;
-
 }
 a{
 	text-decoration: none;
@@ -18,6 +19,7 @@ header .navbar{
 }
 .navbar h1{
 	font-size: 1.8rem;
+	line-height: 1.9rem;
 	text-align: center;
 	color: #fff;
 	letter-spacing: .1rem;
@@ -35,7 +37,7 @@ header .banner{
 }
 section .tabs{
 	width: 100%;
-	 
+
 }
 section .tabs li{
 	list-style: none;
@@ -84,9 +86,10 @@ section .tabs li{
 	color: #888;
 	display: block;
 	text-align: center;
-	line-height: 21.5rem;
-
-	 
+	/*line-height: 21.5rem;*/
+	margin-top:65%;
+	z-index: 11;
+ 
 }
 .tabs i{
  	color: #2D6F89;
@@ -113,9 +116,9 @@ section .tabs li{
 	margin-top: -15rem;	
 }
 .logobg img{
-	width: 70%;
+	width: 60%;
 	position: absolute;
-	top:0;
+	top:-1.8rem;
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0.3;	
@@ -123,7 +126,7 @@ section .tabs li{
 /*swiper*/
    .swiper-container {
         width: 100%;
-        height: 60rem;       
+      /*  height: 60rem; */      
     }
 /*    .swiper-slide {
         text-align: center;

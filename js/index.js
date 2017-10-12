@@ -1,5 +1,6 @@
 $(function(){
-		$(".tabs").tabs( );
+	 
+		//$(".tabs").tabs( );
 		// $(".ulbtn li").on("click",function(){
 		// 	$(".ulbtn li").css({
 		// 		background:"#398CA0",
@@ -14,7 +15,7 @@ $(function(){
 			
 		// });
 	//_____________swiper
-	
+
     var swiper = new Swiper('.swiper-container', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
