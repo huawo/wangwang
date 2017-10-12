@@ -1,5 +1,5 @@
 $(function(){
-		$(".tabs").tabs( );
+		//$(".tabs").tabs( );
 		// $(".ulbtn li").on("click",function(){
 		// 	$(".ulbtn li").css({
 		// 		background:"#398CA0",
