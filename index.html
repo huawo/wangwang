@@ -6,6 +6,8 @@
 	<title>SCYY</title>
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/iconfont.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/echarts.js"></script>
@@ -29,72 +31,89 @@
 
 		</div>
 	</header>
-	<section>
-		<div class="tabs">
-			<ul class="ulbtn">
-				<li><a href="#otabs" class="blockbtn-f">1</a></li>
-				<li><a href="#ttabs" class="blockbtn-l">2</a></li>
-			</ul>
-			<div id="otabs">
-				<ul>
-					<li>
-						<i class="iconfont icon-dingdanguanli"></i>
-						<a href="">荣誉榜</a> </li>
-					<li>
-						<i class="iconfont icon-weituofangziliao"></i>
-						<a href="">产量产值</a> </li>
-					<li>
-						<i class="iconfont icon-kaifazhequanxianpeizhi"></i>
-						<a href="">生产力</a> </li>
-					<li>
-						<i class="iconfont icon-fuwupeizhi"></i>
-						<a href="">质量</a> </li>
-					<li>
-						<img class="logo" src="img/logo2.png" alt="">
-					<li>
-						<i class="iconfont icon-feiyongguizeziliao"></i>
-						<a href="">成本</a> </li>
-					<li>
-						<i class="iconfont icon-weituofangziliao"></i>
-						<a href="">交付</a> </li>
-					<li>
-						<i class="iconfont icon-renzhengguanli"></i>
-						<a href="">安全</a> </li>
-					<li>
-						<i class="iconfont icon-jiexilie"></i>
-						<a href="">士气</a> </li>
-				</ul>
-			</div>
-			<div id="ttabs">
-				<ul>
-					<li>
-						<i class="iconfont icon-caidanpeizhi"></i>
-						<a href="">宣导事项</a></li>
-					<li>
-						<i class="iconfont icon-fuwuzhuce"></i>
-						<a href="">培训专栏</a></li>
-					<li>
-						<i class="iconfont icon-renzhengziliao"></i>
-						<a href="">意见箱</a></li>
-				</ul>
-				<div class="logobg">
-					
-					<img src="img/logo2.png" alt="">
-				</div>	
+	<section>	 
+		 <div class="swiper-container tabs">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"> 
+	            	<div id="otabs">
+						<ul>
+							<li>
+								<i class="iconfont icon-dingdanguanli"></i>
+								<a href="">荣誉榜</a>
+						    </li>
 
-			</div>
-			
+							<li>
+								<i class="iconfont icon-weituofangziliao"></i>
+								<a href="">产量产值</a> 
+							</li>
 
-		</div>
+							<li>
+								<i class="iconfont icon-kaifazhequanxianpeizhi"></i>
+								<a href="">生产力</a> 
+							</li>
 
+							<li>
+								<i class="iconfont icon-fuwupeizhi"></i>
+								<a href="">质量</a> 
+							</li>
+
+							<li>
+								<img class="logo" src="img/logo2.png" alt="">
+							</li>
+
+							<li>
+								<i class="iconfont icon-feiyongguizeziliao"></i>
+								<a href="">成本</a> 
+							</li>
+
+							<li>
+								<i class="iconfont icon-weituofangziliao"></i>
+								<a href="">交付</a> 
+							</li>
+
+							<li>
+								<i class="iconfont icon-renzhengguanli"></i>
+								<a href="">安全</a> 
+							</li>
+
+							<li>
+								<i class="iconfont icon-jiexilie"></i>
+								<a href="">士气</a> 
+							</li>
+
+						</ul>
+					</div>
+				</div>
+	           	 <!-- </div> -->
+	            <div class="swiper-slide">
+		            <div id="ttabs">
+						<ul>
+							<li>
+								<i class="iconfont icon-caidanpeizhi"></i>
+								<a href="">宣导事项</a></li>
+							<li>
+								<i class="iconfont icon-fuwuzhuce"></i>
+								<a href="">培训专栏</a></li>
+							<li>
+								<i class="iconfont icon-renzhengziliao"></i>
+								<a href="">意见箱</a></li>
+						</ul>
+						<div class="logobg">
+							<img src="img/logo2.png" alt="">
+						</div>	  
+		            </div>
+	        	</div>
+		    </div>   	
+	        <!-- Add Pagination页码头 -->
+	        <div class="swiper-pagination"></div> 	   		 	
+		 </div>
+ 
 
 	</section>	
 
 	<!-- 
 荣誉榜、产量产值、生产力、质量、成本、交付、安全、士气、宣导事项、培训专栏、意见箱、LOGO
- -->
- 	 
- 	 
+ --> 
  	
 </body>	
 </html>

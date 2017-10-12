@@ -1,7 +1,7 @@
 html{
 	font-size: 62.5%;
 }
-body{
+body,h1{
 	margin: 0;
 	padding: 0;
 
@@ -28,45 +28,17 @@ header .navbar{
 }
 
 header .banner{
-	margin-bottom: 1rem;
+/*	margin-bottom: 1rem;*/
 	width: 100%;
 	height: 25rem;
 	background: url(../img/1.png),linear-gradient(45deg,#020031 30%,#58DCDF 130%);
 }
-
+section .tabs{
+	width: 100%;
+	 
+}
 section .tabs li{
 	list-style: none;
-}
-.tabs .ulbtn{
-	padding: 0;
-	width: 8rem;
-	height: 1rem;
-	background: #398CA0;
-	margin:0 auto;
-	border-radius: 1rem;
-	border:2px solid #2D6F89;
- 
-}
-.tabs .ulbtn li{
-	/*margin:  0 auto;*/
-	/*text-align: center;*/
-	width:30%;
-	height: 1rem;
-	box-sizing: border-box;
-	float: left;
-	background: #398CA0;
-	border-radius: 1rem;
-}
-.tabs .ulbtn li:first-child{
-	background: #58DCDF;
-	width:70%;
- 
-}
- 
-.ulbtn li a{
-	display: block ;
- 	opacity: 0;
-	color: #398CA0 ;
 }
 #otabs,#otabs ul,#ttabs,#ttabs ul{
 	margin: 0;
@@ -146,10 +118,23 @@ section .tabs li{
 	top:0;
 	left: 50%;
 	transform: translateX(-50%);
-	opacity: 0.3;
-
-	
+	opacity: 0.3;	
 }
+/*swiper*/
+   .swiper-container {
+        width: 100%;
+        height: 60rem;       
+    }
+/*    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        line-height: 300px;
+    }*/
+ 
+ .swiper-pagination-progress .swiper-pagination-progressbar{
+ 	color: red;
+ 	background: red;
+ }
 
  
 
