@@ -87,7 +87,11 @@ section .tabs li{
 	display: block;
 	text-align: center;
 	/*line-height: 21.5rem;*/
+<<<<<<< HEAD
 	/*margin-top:65%;*/
+=======
+/* 	margin-top:65%; */
+>>>>>>> ae0d95913dcb61b92e9d17d17b1942adb913b522
 	position: absolute;
 	bottom: 10%;
 	left: 50%;
