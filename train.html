@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>培训专栏</title>
+
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="stylesheet" href="style/iconfont.css">
+	<link rel="stylesheet" href="style/index.css">
+	
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		if (!window.jQuery){
+	    document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+  		}
+	</script>
+
+	<script src="js/swiper.min.js"></script>	
+	<!-- <script src="js/echarts.js"></script> -->
+	<!-- <script src="js/index.js"></script>	 -->
+
+</head>
+<body>
+	<header>
+		<div class="px-header">
+
+
+
+<!-- Swiper -->
+ 
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide")"></div>
+            <div class="swiper-slide")"></div>
+            <div class="swiper-slide")"></div>
+            <div class="swiper-slide")"></div>
+            <div class="swiper-slide")"></div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+
+ 
+
+		</div>
+
+		<div class="px-nav"></div>
+ 
+		
+	</header>
+
+
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+		direction:'vertical',
+		initialSlide:4,
+
+        coverflow: {
+        	// slide:10,
+            rotate: -10,
+            stretch: 330,
+            depth: 100,
+            modifier: 1,
+            Shadows : true
+        },
+       
+    });
+    </script>
+
+
+	
+</body>
+</html>
