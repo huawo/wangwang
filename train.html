@@ -6,51 +6,74 @@
 	<title>培训专栏</title>
 
 	<link rel="stylesheet" href="style/swiper.min.css">
-	<link rel="stylesheet" href="style/iconfont.css">
+<!-- 	<link rel="stylesheet" href="style/iconfont.css"> -->
 	<link rel="stylesheet" href="style/index.css">
-	
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		if (!window.jQuery){
-	    document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-  		}
-	</script>
-
+	<script src="js/jquery.js"></script>
 	<script src="js/swiper.min.js"></script>	
 	<!-- <script src="js/echarts.js"></script> -->
-	<!-- <script src="js/index.js"></script>	 -->
+	<script src="js/index2.js"></script>	
 
 </head>
 <body>
-	<header>
-		<div class="px-header">
-
-
-
+	 
+  <div class="px-header">
+  			<div class="hd"><span></span></div>
 <!-- Swiper -->
  
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide")"></div>
-            <div class="swiper-slide")"></div>
-            <div class="swiper-slide")"></div>
-            <div class="swiper-slide")"></div>
-            <div class="swiper-slide")"></div>
-        </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-    </div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide slide-b1")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        1</div>
+			        <div class="swiper-slide slide-b2")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        2</div>
+			        <div class="swiper-slide slide-b3")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        3</div>
+			        <div class="swiper-slide slide-b4")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        4</div>
+			        <div class="swiper-slide slide-b5")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        5</div>
+			        <div class="swiper-slide slide-b6")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        6</div>
+			        <div class="swiper-slide slide-b7")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        7</div>
+			        <div class="swiper-slide slide-b8")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        8</div>
+			        <div class="swiper-slide slide-b9")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        9</div>
+			        <div class="swiper-slide slide-b10")">
+						<span></span>	<i></i>
+						<div class="slide-box"></div>
+			        10</div>
 
-
+			    </div>
+			    <!-- Add Pagination -->
+			    <!-- <div class="swiper-pagination"></div> -->
+			</div>
  
-
-		</div>
+  </div>
 
 		<div class="px-nav"></div>
+		<hr>
  
-		
-	</header>
-
+ 
 
  <script>
     var swiper = new Swiper('.swiper-container', {
@@ -60,13 +83,13 @@
         centeredSlides: true,
         slidesPerView: 'auto',
 		direction:'vertical',
-		initialSlide:4,
-
+		initialSlide:10,
+		loop:true,
         coverflow: {
-        	// slide:10,
-            rotate: -10,
-            stretch: 330,
-            depth: 100,
+        	 	 
+            rotate: 0,
+            stretch: 100,
+            depth: 280,
             modifier: 1,
             Shadows : true
         },

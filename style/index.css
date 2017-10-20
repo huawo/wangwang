@@ -1,11 +1,10 @@
-html{
+ html{
 	font-size: 62.5%;
-	height: auto;
- 
 }
 body,h1{
 	margin: 0;
 	padding: 0;
+	overflow:hidden;
 }
 a{
 	text-decoration: none;
@@ -87,11 +86,7 @@ section .tabs li{
 	display: block;
 	text-align: center;
 	/*line-height: 21.5rem;*/
-<<<<<<< HEAD
 	/*margin-top:65%;*/
-=======
-/* 	margin-top:65%; */
->>>>>>> ae0d95913dcb61b92e9d17d17b1942adb913b522
 	position: absolute;
 	bottom: 10%;
 	left: 50%;
@@ -132,7 +127,7 @@ section .tabs li{
 	opacity: 0.3;	
 }
 /*swiper*/
-   .swiper-container {
+  section>.swiper-container {
         width: 100%;
       /*  height: 60rem; */      
     }
@@ -149,48 +144,120 @@ section .tabs li{
 
 
 /*____________培训*/
-header .px-header{
+
+/* .px-header{
 	width: 100%;
-	height: 60rem;
+	height: 100%;
 	background: #018172;
-}
-header .px-nav{
+}*/
+/* 
+ .px-header .hd{
 	width: 100%;
-	height: 30rem;
-	background: #333;
-	position: absolute;	
-	z-index: 9;
+	height: 14%;
+	 
+	background: linear-gradient(45deg,#182221 30%,#25403b 130%);
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	box-shadow: 1rem 1rem 1rem #1D2E2B;
+}*/ 
+.px-header {
+ background: linear-gradient(45deg,#111 30%,#25403b 130%);
 }
-
-
-.px-header .swiper-container {
+.px-header .hd span{
+	border-radius: 0 0 1rem 1rem;
+	display: block;
+	width:100%;
+	height: 5rem;
+	background: #059d8b;
+}
+.px-header>.swiper-container {
         width: 100%;
-        height: 50rem;
-        padding-top: 15rem;
-      
+        max-height: 100%;
+        overflow-y: hidden;
+      /* background: linear-gradient(45deg,#111 30%,#25403b 130%);*/
+
+
+
 }
 .px-header .swiper-wrapper{
-
-	width:90%;
-	height: 100%;
-	margin: 0 auto;
-	/*background: red;*/
-
-}
  
-
+ 	width: 94%;
+ 	height: 400px;
+  	padding-top: 70rem;
+ 	margin: 0 auto;
+ 
+}
 .px-header .swiper-slide{
-	border-radius:.5rem;
+	border-radius:0 2rem 2rem 2rem;
 	width: 100%;
-	height: 42rem;
+	height: 25rem;
 	background: #eee;
+	padding-top: .5rem;
+	box-sizing: border-box;
 
 }
+.px-header .slide-b1{
+	background: #2fc6f3;
+}
+.px-header .slide-b2{
+	background: #FFCC66;
+}
+.px-header .slide-b3{
+	background: #FF9966;
+}
+.px-header .slide-b4{
+	background: #FF6666;
+}
+.px-header .slide-b5{
+	background: #b3db75;
+}
+.px-header .slide-b6{
+	background: #e05782;
+}
+.px-header .slide-b7{
+	background: #ae8bd1;
+}
+.px-header .slide-b8{
+	background: #27be83;
+}
+.px-header .slide-b9{
+	background: #9999FF;
+}
+.px-header .slide-b10{
+	background: #9171f8;
+}
+.px-header .slide-box{
+	background: #fff;
+	border-radius: 2rem;
+	width: 97%;
+	height: 97%;
+	margin: 0 auto;
+}
+
+
+.px-header .swiper-slide>span{
+	display: block;
+	position: absolute;
+	top: -12%;
+	width: 20%;
+	height: 12%;
+	border-radius:1.3rem 1.3rem 0 0;
+	background: inherit;
+	font-size: 3rem;
+}
+/*.px-header .swiper-slide>i{
+	border-bottom: 
+	display: block;
+	position: absolute;
+	top: -10%;
+	left: 19%;
+	width: 22%;
+	height: 12%;
+	border-radius:0 0 0 1rem;
  
-
-
-
-
+}*/
+ 
 
 
 
