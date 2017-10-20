@@ -153,6 +153,7 @@ section .tabs li{
 /* 
  .px-header .hd{
 	width: 100%;
+<<<<<<< HEAD
 	height: 14%;
 	 
 	background: linear-gradient(45deg,#182221 30%,#25403b 130%);
@@ -163,6 +164,12 @@ section .tabs li{
 }*/ 
 .px-header {
  background: linear-gradient(45deg,#111 30%,#25403b 130%);
+=======
+	height: 18.5rem;
+	background: #333;
+	position: absolute;	
+	z-index: 9;
+>>>>>>> 72e8b38b0890776f350421da51296aead5b49258
 }
 .px-header .hd span{
 	border-radius: 0 0 1rem 1rem;
