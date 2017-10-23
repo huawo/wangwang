@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bar</title>
+	<script src="js/jquery.js"></script>
+	<script>
+		
+		$(function(){
+
+			$(".b-bar").on("click",function(){
+				  $(this).next('div').css({
+				  	"height":"6rem",
+				  	"transition":"all .3s ease-out"
+
+
+				  })
+
+			})
+
+
+
+
+
+		})
+ 
+	</script>
+
+	<style>
+		body,html{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding:0;
+			overflow:hidden;
+			background: #ddd;
+		}
+		h2{
+			margin: 0;
+			padding:0;
+			font-size: 5rem;
+			color: #fff;
+		}
+		.allbar{
+			position: relative;
+			background: #ddd;
+			width: 100%;
+			height: 100%;
+		    overflow:hidden;
+		}
+		.b-bar{
+			
+			width: 100rem;
+			height: 30%;
+ 		    background: linear-gradient(45deg,#059D8B 5%,#27BE83 100%);
+			box-shadow:  .1rem .1rem .1rem   #999;
+			margin-bottom: .5rem;
+			transform: rotate(-20deg) translate(-20rem,-18rem);
+		}
+		.bar1{
+			background: #e03e41
+		}
+		.bar1 h2{
+			position: absolute;
+			transform: rotate(20deg);
+			top: 35%;
+			left: 25%;
+		}
+		.bar2{
+			background: #f36c66
+		}
+		.bar2 h2{
+			position: absolute;
+			transform: rotate(20deg);
+			top: 30%;
+			left: 32%;
+
+		}
+ 
+		.bar3{
+			background: #fdc176
+		}
+		.bar3 h2{
+			position: absolute;
+			transform: rotate(20deg);
+			top: 30%;
+			left: 38.8%;
+		}
+		 
+		.bar4{
+			background: #a8cbde
+		}
+		.bar4 h2{
+			position: absolute;
+			transform: rotate(20deg);
+			top: 30%;
+			left: 46%;
+		}
+		 
+  
+		.nextbar{
+			width: 100%;
+			height: 0;
+			 
+			overflow:hidden;
+			transform: rotate(-20deg) translate(2rem,-6rem);
+		}
+		.barshade{
+			position: absolute;
+			width: 150%;
+			height: 20%;
+			background: #fff;
+			right: -70%;
+			transform: rotate(73deg);
+			opacity: .2;
+			z-index: 9;
+			pointer-events: none;
+		}
+		div p{
+			color: #555;
+		}
+	 
+	</style>
+</head>
+<body>
+	 
+	<div class="allbar">
+		<div class="barshade"></div>
+
+		<div class="b-bar bar1">
+			<h2>1</h2>
+		</div>
+		<div class="nextbar box1">
+		 	<p>baidu window是只浏览器对象，JS中的点击作用域，一切方法和属性都是这个对象的子集；
+document文档或对象，是window的子集</p>
+		</div>
+
+		<div class="b-bar bar2">
+			<h2>2</h2>
+		</div>
+		<div class="nextbar box2"></div>
+
+		<div class="b-bar bar3">
+			<h2>3</h2>
+		</div>
+		<div class="nextbar box3"></div>
+
+		<div class="b-bar bar4">
+			<h2>4</h2>
+		</div>
+		<div class="nextbar box4"></div>
+ 
+ 
+		
+	</div>
+ 	
+</body>
+</html>
