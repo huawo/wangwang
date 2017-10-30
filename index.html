@@ -6,25 +6,38 @@
 	<title>scyy</title>
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/iconfont.css">
-	<link rel="stylesheet" href="style/swiper.min.css">
-
-	
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
-	<script>
-		if (!window.jQuery){
-	    document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
-  		}
-	</script>
-	<script src="js/swiper.min.js"></script>
-<<<<<<< HEAD
-=======
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<!-- 	<script src="js/jquery.js"></script> -->
-<!-- 	<script src="js/jquery-ui.js"></script> -->
->>>>>>> ae0d95913dcb61b92e9d17d17b1942adb913b522
+	<!-- <link rel="stylesheet" href="style/swiper.min.css"> -->
+ 
+	<script src="js/jquery.js"></script>
+<!-- 	<script src="js/swiper.min.js"></script> -->
 	<script src="js/echarts.js"></script>
 	<script src="js/index.js"></script>
+	<style>
+	.spread{
+		outline:none;
+		user-select:none;
+		position: relative;
+		overflow: hidden;
+ 
+	}
+		
+
+    .ripple {
+	    position:absolute;
+	    background:rgba(100,100,100,.5);
+	    border-radius:100%;
+	    transform:scale(0);
+	    pointer-events:none;
+	    z-index: 1;
+    }  
+
+    .ripple.show  {
+        animation:aa  .5s ease-out;
+    }  
+    @keyframes aa{
+        to {transform:scale(1.5);opacity:0;}
+    }  
+	</style>
 
 	
 </head>
@@ -35,9 +48,9 @@
 		</div>
 		<div class="banner">
 	 
-			<div class="map" style="height: 25rem;">			 
+			<div class="map" style="height: 100%; ">			 
 				<!-- 为ECharts准备一个具备大小（宽高）的Dom-->
-				<div id="mainMap" style="height:25rem;width: 100% ; ">
+				<div id="mainMap" style="height:90%;width: 100% ; ">
 				</div>
 				<!--Step:2 引入echarts.js-->
 				<div style="text-align:center;clear:both;margin-top:3rem"> 
@@ -46,81 +59,86 @@
 
 		</div>
 	</header>
-	<section>	 
-		 <div class="swiper-container tabs">
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide"> 
+	<section>
+
+		 <div class=" tabs">
+		 	<div class="hximg">
+		 		<img src="img/hx1.png" alt="" class="limg">
+		 		<img src="img/hx2.png" alt="" class="rimg">		 		
+		 	</div>	
+	        <!-- <div class="swiper-wrapper"> -->
+	            <!-- <div class="swiper-slide">  -->
 	            	<div id="otabs">
 						<ul>
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-dingdanguanli"></i>
-								<a href="">荣誉榜</a>
+								<span href="train.html">荣誉榜</span>
 						    </li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-liuchengleixing"></i>
-								<a href="">产量产值</a> 
+								<span href="bar.html" >产量产值</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-kaifazhequanxianpeizhi"></i>
-								<a href="">生产力</a> 
+								<span  >生产力</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-fuwupeizhi"></i>
-								<a href="">质量</a> 
+								<span >质量</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<img class="logo" src="img/logo2.png" alt="">
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-feiyongguizeziliao"></i>
-								<a href="">成本</a> 
+								<span >成本</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-weituofangziliao"></i>
-								<a href="">交付</a> 
+								<span >交付</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-renzhengguanli"></i>
-								<a href="">安全</a> 
+								<span >安全</span> 
 							</li>
 
-							<li>
+							<li class="spread">
 								<i class="iconfont icon-jiexilie"></i>
-								<a href="">士气</a> 
+								<span >士气</span> 
 							</li>
 
 						</ul>
 					</div>
-				</div>
+				<!-- </div> -->
 	           	 <!-- </div> -->
-	            <div class="swiper-slide">
+	          <!--   <div class="swiper-slide">
 		            <div id="ttabs">
 						<ul>
 							<li>
 								<i class="iconfont icon-caidanpeizhi"></i>
-								<a href="">宣导事项</a></li>
+								<a class="spread" >宣导事项</a></li>
 							<li>
 								<i class="iconfont icon-fuwuzhuce"></i>
-								<a href="">培训专栏</a></li>
+								<a class="spread" >培训专栏</a></li>
 							<li>
 								<i class="iconfont icon-renzhengziliao"></i>
-								<a href="">意见箱</a></li>
+								<a class="spread" >意见箱</a></li>
 						</ul>
 						<div class="logobg">
 							<img src="img/logo2.png" alt="">
 						</div>	  
 		            </div>
-	        	</div>
-		    </div>   	
+	        	</div> -->
+		    <!-- </div>   --> 	
 	        <!-- Add Pagination页码头 -->
-	        <div class="swiper-pagination"></div> 	   		 	
+	        <!-- <div class="swiper-pagination"></div> 	   --> 		 	
 		 </div>
  
 
@@ -129,6 +147,42 @@
 	<!-- 
 荣誉榜、产量产值、生产力、质量、成本、交付、安全、士气、宣导事项、培训专栏、意见箱、LOGO
  --> 
+ <script>  
+    var addRippleEffect = function (e) {  
+        //声明target 等于鼠标节点    
+        var target = e.target;  
+        if (target.className.toLowerCase() !== 'spread') return false; 
+
+        //声明rect 等于button的大小及位置 
+        var rect = target.getBoundingClientRect();  
+
+        //声明ripple 等于按钮 获取class为ripple  ripple=btn.span  
+        var ripple = target.querySelector('.ripple');  
+
+        //如果ripple不存在 button后面建立span
+        if (!ripple) {  
+            ripple = document.createElement('span');  
+            ripple.className = 'ripple'  
+            ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px'  
+            target.appendChild(ripple);  
+        }  
+         ripple.classList.remove('show');  
+               //鼠标的y坐标-按钮的顶部-
+        var top = e.pageY - rect.top - ripple.offsetHeight / 2 - document.body.scrollTop;  
+        var left = e.pageX - rect.left - ripple.offsetWidth / 2 - document.body.scrollLeft;  
+        //绝对定位
+        ripple.style.top = top + 'px'  
+        ripple.style.left = left + 'px'  
+        ripple.classList.add('show');  
+        return false;  
+
+    }  
+    document.addEventListener('click', addRippleEffect, false);  
+ 
+
+
+    </script> 
  	
 </body>	
 </html>
+<!-- P生产力  Q质量 C成本 D交期  S工安事故 M士气  E环境 培训 宣导事项 -->

@@ -1,5 +1,11 @@
- html{
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+html{
 	font-size: 62.5%;
+	
 }
 body,h1{
 	margin: 0;
@@ -8,6 +14,11 @@ body,h1{
 }
 a{
 	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 40%;
+	background: red;
 }
 header .navbar{
 	width: 100%;
@@ -31,44 +42,75 @@ header .navbar{
 header .banner{
 /*	margin-bottom: 1rem;*/
 	width: 100%;
-	height: 25rem;
+	height: 100%;
 	background: url(../img/1.png),linear-gradient(45deg,#020031 30%,#58DCDF 130%);
 }
+section {
+	width: 250%;
+	height: 60%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background: #fff;
+
+}
+section .tabs .hximg{
+	position: absolute;
+ 	top: -1.5%;
+	width: 40%;
+	height: 30px;
+	z-index: 99999;
+}
+.tabs .hximg .rimg{
+	width: 40%;
+	float: right;
+	transform: rotate(2deg);
+
+}
+.tabs .hximg .limg{
+ 
+	width: 40%;
+	float: left;
+	transform: rotate(-2deg);
+ 
+
+}
 section .tabs{
-	width: 100%;
+	width:40%;
+	height: 100%;
+	margin: 0 auto;
+
 
 }
 section .tabs li{
 	list-style: none;
 }
-#otabs,#otabs ul,#ttabs,#ttabs ul{
+#otabs,#otabs ul{
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 30rem;
+	height:100%;
+
 }
-#otabs,#ttabs{
+#otabs {
 	padding: 1rem;
 	box-sizing: border-box;
 }
-#otabs li,#ttabs li{
-	width: 33.3333%;
-	height: 13rem;
+#otabs li {
+	width: 33.333%;
+	height: 33.333%;
 	float: left;
 	box-sizing: border-box;
 	border: 1px solid #ddd;
 	border-top: none;
-	border-left: none;
+	border-right: none;
 	position: relative;
 }
-#ttabs li{
-	border-bottom: none;
-}
-#ttabs li:nth-child(3){
-	border-right: none;
-}
-#otabs li:nth-child(3n){
-	border-right: none;
+ 
+#otabs li:nth-child(1n){
+	border-left: none;
   
 }
 #otabs li:nth-child(4),#otabs li:nth-child(5),#otabs li:nth-child(6){
@@ -79,29 +121,28 @@ section .tabs li{
 	border-bottom: none; 
 
 }
-#otabs a,#ttabs a{
+#otabs span {
 	 
 	font-size: 1.4rem;
 	color: #888;
 	display: block;
 	text-align: center;
-	/*line-height: 21.5rem;*/
-	/*margin-top:65%;*/
+	width: 100%;
 	position: absolute;
 	bottom: 10%;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 11;
+	pointer-events: none;
  
 }
 .tabs i{
  	color: #2D6F89;
 	font-size: 6rem;
-    line-height: 10rem;
+    /*line-height: 10rem;*/
     margin-left: 50%;
     position: absolute;
     left: 0;	
-    transform: translateX(-50%);
+    transform: translate(-50%,50%);
+    z-index: 99;
+    pointer-events: none;
 
 }
 
@@ -163,25 +204,24 @@ section .tabs li{
 }*/ 
 .px-header {
 	height: 100%;
- background: linear-gradient(45deg,#111 50%,#2d574f 130%);
+    background: linear-gradient(45deg,#111 50%,#2d574f 130%);
+
 }
 .px-header .hd h2{
 	padding: 0;
 	margin: 0;
 	color: #fff;
-	margin: 0 auto;
 	text-align: center;
 	line-height: 3.5rem;
 	letter-spacing: .1rem;
 	font-size: 1.8rem
 }
 .px-header .hd span{
-	display: inline-block;
 	float: left;
 	color: #efefef;
 	line-height: 3rem;
 	margin-left: 1.5rem;
-	
+
 }
 .px-header .hd {
 	border-radius: 0 0 1rem 1rem;
@@ -189,16 +229,11 @@ section .tabs li{
 	height: 3rem;
 	background: #059d8b;
 }
+ 
 .px-header>.swiper-container {
  
     width: 100%;
-
-    /*overflow:hidden;*/
-       /* height: 100%;
-        overflow:hidden;
-        border: 1px solid red;*/
-      /* background: linear-gradient(45deg,#111 30%,#25403b 130%);*/
-
+ 
 
 
 }
@@ -217,6 +252,7 @@ section .tabs li{
 	background: #eee;
 	padding-top: .5rem;
 	box-sizing: border-box;
+	font-size: 5rem;
 
 }
 .px-header .slide-b1{
@@ -268,19 +304,7 @@ section .tabs li{
 	background: inherit;
 	font-size: 3rem;
 }
-/*.px-header .swiper-slide>i{
-	border-bottom: 
-	display: block;
-	position: absolute;
-	top: -10%;
-	left: 19%;
-	width: 22%;
-	height: 12%;
-	border-radius:0 0 0 1rem;
  
-}*/
- 
-
 
 
 

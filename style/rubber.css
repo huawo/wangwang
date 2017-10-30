@@ -1,0 +1,245 @@
+html{
+	font-size: 62.5%
+}
+body,html{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.svg{
+	position: absolute;
+	top: 10%;
+	left: -200%;
+	transform: rotate(90deg);
+	z-index: 98;
+}
+.t-btn{
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	top: .3rem;
+	left: 2%;
+}
+.t-btn .bar{
+	width: 3rem;
+	height: .3rem;
+	background: #eee;
+	border-radius: .5rem;
+	margin-top: .3rem;
+}
+.rubber-body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*background: linear-gradient(45deg,#111 40%,#2d574f 130%);*/
+	background: #09B39C;
+
+}
+.rubber-body .header{
+	width: 100%;
+	height: 3rem;
+	background: #059D8B;
+	position: absolute;
+	z-index: 9999;
+	border-radius:0 0 1rem 1rem;
+
+}
+.header h2{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	line-height: 3.3rem;
+	text-align: center;
+}
+.header .on{
+	width: 30%;
+	height: 3rem;
+
+}
+
+.rubber-hidden{
+	width: 40%;
+	height: 150%;
+	background: #059D8B;
+	background: rgba(5,0157,0139,0.8);
+	position: absolute;
+	top:-30%;
+	left:-40%; 
+	transition: all .3s ease-out;
+	z-index: 999;
+
+} 
+.rubber-hidden  ul{
+	width: 55%;
+	height: 100rem;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+
+}
+.rubber-hidden  li{
+	margin: 1rem 0;
+	list-style:none;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+/*.r-chart{*/
+.r-nav{
+/*display: none;*/
+	width: 100%;
+	height: 100%;	
+	position: absolute;
+	left: 0;
+	top:1rem;	 
+	transition: all .5s   cubic-bezier(.95,.05,.81,.19) ;
+	z-index: 999;
+}
+.r-nav .r-chart{
+	width: 100%;
+	height: 100%;
+ 	padding: 5%;
+	box-sizing: border-box;	
+	position: absolute;
+	left: 0;
+	top:3rem;	 
+	transition: all .5s   cubic-bezier(.95,.05,.81,.19) ;
+}
+
+
+.chart-box{
+	width: 100%;
+	height: 20rem;
+	border-radius:.5rem;
+	background: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	margin-top: 3rem;
+	 
+}
+.chart-box .head{
+	width: 100%;
+	height: 2rem;
+	border-radius: .5rem .5rem 0 0;
+}
+.chart-box:nth-child(1 ) .head{
+
+background: #d3f484;
+background: #023832;
+
+}
+.chart-box:nth-child(2 ) .head{
+
+background: #9999FF;
+background: #023832;
+
+}
+.chart-box:nth-child(3 ) .head{
+
+background: #2FC6F3;
+background: #023832;
+
+}
+h3{
+font-size: 2rem;
+color: #fff;
+}
+/*————————————————————————————charts*/
+#main{
+	width:100%;
+	height:100%;
+	background: #333;
+ 
+
+}
+/*#main canvas{
+	font-size: .5rem
+}*/
+/*————————————————————————————charts*/
+
+
+.r-note{
+ 
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top:-100%;
+transition: all .5s  cubic-bezier(.95,.05,.81,.19) ;
+ 
+}
+
+/*swiper*/
+.r-note .down-box {
+
+/*display: none;*/
+
+width: 100%;
+/*  padding: 5%;*/
+/*  box-sizing: border-box;*/
+
+
+
+}
+.r-note .swiper-wrapper{
+
+width: 100%;
+height: 30rem;
+padding-top: 44rem;
+margin: 0 auto;
+
+}
+.r-note .swiper-slide{
+border-radius:0 2rem 2rem 2rem;
+width: 100%;
+height: 25rem;
+background: #eee;
+padding-top: .5rem;
+box-sizing: border-box;
+font-size: 5rem;
+
+}
+.r-note .slide-b1{
+background: #2fc6f3;
+}
+.r-note .slide-b2{
+background: #FFCC66;
+}
+.r-note .slide-b3{
+background: #FF9966;
+}
+.r-note .slide-b4{
+background: #FF6666;
+}
+.r-note .slide-b5{
+background: #b3db75;
+}
+.r-note .slide-b6{
+background: #e05782;
+}
+
+.r-note .slide-box{
+background: #fff;
+border-radius: 2rem;
+width: 97%;
+height: 97%;
+margin: 0 auto;
+}
+
+
+.r-note .swiper-slide>span{
+display: block;
+position: absolute;
+top: -12%;
+width: 20%;
+height: 12%;
+border-radius:1.3rem 1.3rem 0 0;
+background: inherit;
+font-size: 3rem;
+}
+
+
+

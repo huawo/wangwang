@@ -1,27 +1,14 @@
 $(function(){
   
-		//$(".tabs").tabs( );
-		// $(".ulbtn li").on("click",function(){
-		// 	$(".ulbtn li").css({
-		// 		background:"#398CA0",
-		// 		width:"30%"
-		// 	});
-		// 	$(this).css({
-		// 		// border:"1px solid #58DCDF",
-		// 		background:"#58DCDF",
-		// 		width:"70%",
-		// 		transition:"all .3s ease-out"
-		// 	});
-			
-		// });
+	 
 	//_____________swiper
 
-    var swiper = new Swiper('.swiper-container', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
-        paginationType: 'progress'
-    });
+    // var swiper = new Swiper('.swiper-container', {
+    //     nextButton: '.swiper-button-next',
+    //     prevButton: '.swiper-button-prev',
+    //     pagination: '.swiper-pagination',
+    //     paginationType: 'progress'
+    // });
     
 
 	// _________________map
