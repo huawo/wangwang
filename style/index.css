@@ -84,7 +84,7 @@ section .tabs{
 	padding: 1rem 1.5rem;
 	box-sizing: border-box;
 	position: absolute;
-	top: -12rem;
+	top: -10rem;
 }
 #otabs li {
 	list-style: none;
