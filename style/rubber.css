@@ -9,12 +9,14 @@ body,html{
 	overflow: hidden;
 }
 .svg{
+
 	position: absolute;
 	top: 10%;
 	left: -200%;
 	transform: rotate(90deg);
 	z-index: 98;
-	overflow: hidden;
+ 
+	/*overflow: hidden;*/
 }
 .t-btn{
 	width: 3rem;
