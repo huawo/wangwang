@@ -78,7 +78,7 @@ $(".header .t-btn").on("click",function(){
                 setTimeout(function(){
                     $(".r-note").css({
                          
-                        top:"-100%",
+                        top:"-100rem",
                         left:"0"
                     });
                 },1000);
