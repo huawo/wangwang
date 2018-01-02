@@ -57,10 +57,12 @@ $(function(){
 						mapType: 'china',
 						itemStyle:{
 							normal:{
-								borderColor:'rgba(0,204,204,.5)',
+								 borderColor:'rgba(0,204,204,.3)',
+								// borderColor:'rgba(0,0,0,.2)',
 								borderWidth:1,
 								areaStyle:{
 									color: '#153157 '
+									// color: '#317878 '
 								}
 							}
 						},
@@ -74,6 +76,7 @@ $(function(){
 									color:'#fff',
 									borderWidth:1,
 									borderColor:'rgba(30,144,255,0.5)'
+									 
 								}
 							},
 							data : [
@@ -340,7 +343,10 @@ $(function(){
 						}
 					}
 				]
-        });
+
+
+
+        });//啊实打实的
 	});
 };
 

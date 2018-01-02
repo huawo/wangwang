@@ -30,6 +30,8 @@ header .banner{
 	transform: translateX(-50%);
 	border-radius: 0 0 100% 100%;
 	background: url(../img/1.png),linear-gradient(45deg,#020031 30%,#58DCDF 130%); 
+/*	background: url(../img/1.png),linear-gradient(45deg,#001311 40%,#018172 90%); */
+ 
 }
 header .banner .map{
 	width: 40%;
@@ -43,6 +45,16 @@ section {
 	border-radius: 50%;
 	background: #fff;
 
+}
+.icon {
+   height: 100%;
+   width: 40%;
+   transform: translate(-50%,-10%);
+   	margin-left: 50%;
+ /*  margin-left: -50%;*/
+  /* vertical-align: -0.15em;*/
+  /* fill: currentColor;*/
+   overflow: hidden;
 }
 /*section .tabs .hximg{
 	position: absolute;
@@ -106,23 +118,37 @@ section .tabs{
 	text-align: center;
 	width: 100%;
 	position: absolute;
-	bottom: 8%;
+	bottom: 6%;
 	pointer-events: none;
  
 }
 .tabs i{
- 	color: #2D6F89;
+ 	/*color: #2D6F89;
+ 	color: #1a6583;
+ 	color:  #099598; */
 	font-size: 4rem;
-    /*line-height: 10rem;*/
     margin-left: 50%;
     position: absolute;
     left: 0;	
-    transform: translate(-50%,30%);
+    transform: translate(-50%,20%);
     z-index: 99;
     pointer-events: none;
-
+   
+}
+.i-logo img{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+}
+#otabs .i-logo {
+    pointer-events: none;
+    cursor: default;
+    
 }
 
+
+
+/*
 .logo{
 	width: 40%;
 	position: absolute;
@@ -143,7 +169,7 @@ section .tabs{
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0.3;	
-}
+}*/
 /*swiper*/
   section>.swiper-container {
         width: 100%;
@@ -281,8 +307,6 @@ section .tabs{
 	background: inherit;
 	font-size: 3rem;
 }
- 
-
 
 
 

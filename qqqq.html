@@ -1,0 +1,131 @@
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />  
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
+    <title>html5+ js +css3  </title>
+    <script src="js/jquery.js"></script>
+ 
+      
+    <style>  
+  body{
+    height: 20000px;
+  }
+      
+    .box {
+        position:relative;
+        width:13em;
+        height:3em;  
+        border:none;
+        outline:none;
+        background: #ccc;
+        overflow:hidden;
+        user-select:none;
+        border-radius:2px;
+         }  
+   
+    .ripple {
+        position:absolute;
+        background:rgba(0,0,0,1);
+        border-radius:100%;
+        transform:scale(0);
+        pointer-events:none;
+
+    }  
+
+    .ripple.show  {
+        animation:aa  .75s ease-out;
+
+    }  
+    @keyframes aa{
+        to {transform:scale(2);opacity:0;}
+    }  
+    </style>  
+    </head>  
+    <body>  
+  
+      
+        <button class="box">BUTTON</button>  
+        <button class="box">BUTTON</button>  
+        <button class="box">BUTTON</button>  
+        <button class="box">BUTTON</button>  
+        <div class="box"></div>
+       
+
+  <div class="box">1</div>
+     <script>  
+
+  dblclick(){
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+        //__________
+    var addRippleEffect = function (e) {  
+        //声明target 等于鼠标节点    
+        var target = e.target;  
+        if (target.className.toLowerCase() !== 'box') return false; 
+
+        //声明rect 等于btn   ／／返回元素的大小及位置 
+        var rect = target.getBoundingClientRect();  
+
+        //声明ripple 等于btn下class为ripple  ripple=btn.span  ／／querySelector 
+        //var ripple = target.querySelector('.ripple');  
+        var ripple = target.querySelector('.ripple');  
+
+        //如果ripple不存在 button下面建立span
+        if (!ripple) {  
+            ripple = document.createElement('span');  
+            ripple.className = 'ripple'  
+            ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px'  
+            target.appendChild(ripple);  
+        }  
+         ripple.classList.remove('show');  
+               //鼠标的y坐标-按钮的顶部-
+
+               //这个top left就看不懂了
+        var top = e.pageY - rect.top - ripple.offsetHeight / 2 - document.body.scrollTop;  
+        var left = e.pageX - rect.left - ripple.offsetWidth / 2 - document.body.scrollLeft;  
+        //绝对定位
+        ripple.style.top = top + 'px'  
+        ripple.style.left = left + 'px'  
+        ripple.classList.add('show');  
+        return false;  
+
+    }  
+    // document.addEventListener('click', addRippleEffect, false);  
+    $("body").on("click",addRippleEffect) 
+
+    </script> 
+    </body>  
+    </html>
+ 
+<!--    兽人战士！装备帅 顺畅
+        兽人萨满！一顿操作猛如虎  
+      
+ 
+ 
+        战士
+        萨满
+
+
+        德鲁伊   威望外观
+        
+        术士 法师 
+
+         战士竞技场。小德威望
+ 
+
+ 
+   -->
+ 
